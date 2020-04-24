@@ -4,20 +4,20 @@ Wanna tweet a screenshot of your code like the pros?
 
 <img src = 'inst/images/other_init_snap.png' width='50%'>
 
-Pretty and crisp as [carbon](https://carbon.now.sh/), but for `R`!
+**What it is**: 
 
-What it is: A shiny app that converts shinyAce as high resolution images to share.
+A shiny app that converts the ace editor as high resolution images to share that are as pretty and crisp as [carbon](https://carbon.now.sh/), but simplified for `R`!
 
-Pluses: 
+**Pluses**: 
 
   - Do not have to be online
   - Do not have to go to a specific site
   - Host locally with your own R installation
   - Seamlessly move from source editor to image
 
-Minuses:
+**Minuses**:
 
-  - shinyAce can manipulate less features than [carbon](https://carbon.now.sh/)
+  - ace (via [shinyAce](https://github.com/trestletech/shinyAce)) can manipulate less features than [carbon](https://carbon.now.sh/)
 
 ## installation
 
