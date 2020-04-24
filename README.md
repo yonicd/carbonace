@@ -2,6 +2,8 @@
 
 Pretty and crisp as [carbon](https://carbon.now.sh/), but for `R`!
 
+<img src = 'inst/images/other_init_snap.png' width='50%'>
+
 What it is: A shiny app that converts shinyAce as high resolution images to share.
 
 Pluses: 
