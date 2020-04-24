@@ -1,4 +1,3 @@
-#' @export
 #' @importFrom rstudioapi getSourceEditorContext
 carbonace_addin <- function(){
   adi <- rstudioapi::getSourceEditorContext()

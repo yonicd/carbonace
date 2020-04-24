@@ -4,22 +4,48 @@
 \alias{carbonace}
 \title{carbonace shinyapp}
 \usage{
-carbonace(init = "x <- 1", viewer = shiny::browserViewer())
+carbonace(
+  init = "x <- 1",
+  viewer = shiny::paneViewer(),
+  ace_opts = ace_settings()
+)
 }
 \arguments{
 \item{init}{character, intial script to initialize shinyAce with.}
 
-\item{viewer}{which \link[shiny:viewer]{viewer} to open the app in.}
+\item{viewer}{which \link[shiny:viewer]{viewer} to open the app in. Default: shiny::paneViewer()}
+
+\item{ace_opts}{user specific settings tp pass to the \link[shinyAce:aceEditor]{aceEditor}.
+Default: \link[=ace_settings]{ace_settings()}}
 }
 \description{
 shinyapp to convert shinyAce to images for code sharing
 }
 \details{
-The app has an RStudio addin, which you can highlight text in the editor
+\itemize{
+\item The app has an RStudio addin, which you can highlight text in the editor
 and the app will initialize with the contents.
+\item use \link[=ace_settings]{ace_settings()} to set user specific values for the editor.
+}
+
+Default options are:\tabular{ll}{
+   \strong{Field} \tab \strong{Value} \cr
+   theme \tab "ambience" \cr
+   mode \tab 'r' \cr
+   fontSize \tab 12 \cr
+   tabSize \tab 4 \cr
+   value \tab init \cr
+   wordWrap \tab TRUE \cr
+   autoScrollEditorIntoView \tab TRUE \cr
+   maxLines \tab Inf \cr
+   placeholder \tab "Show a placeholder when the editor is empty ..." \cr
+}
 }
 \examples{
 if(interactive()){
  carbonace:::carbonace()
+
+ # Use ace_settings to change initial theme
+ # carbonace:::carbonace(ace_opts = ace_settings(theme = 'chrome'))
  }
 }

@@ -8,7 +8,7 @@ Script inspired from @nujcharee baby :shark: loop [tweet](https://twitter.com/Nu
 
 **What it is**: 
 
-A shiny app that converts the ace editor as high resolution images to share that are as pretty and crisp as [carbon](https://carbon.now.sh/), but simplified for `R`!
+A shiny app that converts the ace editor as high resolution images to share that are as pretty and crisp as [carbon](https://carbon.now.sh/), but simplified for `R`! The app is built on top of a more general package that can snap images of any element in a shiny app called [snapper](https://github.com/yonicd/snapper).
 
 **Pluses**: 
 

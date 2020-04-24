@@ -1,13 +1,13 @@
 Package: carbonace
 Title: Convert shinyAce to Images
-Version: 0.0.1
-Authors@R: person(given = "First", family = "Last", role = c("aut",
+Version: 0.0.2
+Authors@R: person(given = "Jonathan", family = "Sidi", role = c("aut",
         "cre"), email = "first.last@example.com", comment = c(ORCID =
         "0000-0002-4222-1819"))
 Description: Converts shinyAce to images to make it simple to share code.
 License: MIT + file LICENSE
 Depends: R (>= 3.5.0)
-Imports: shiny,shinyAce,snapper,shinyjqui,rstudioapi
+Imports: shiny,shinyAce,snapper,shinyjqui,rstudioapi,utils
 Remotes: yonicd/snapper
 Encoding: UTF-8
 LazyData: true
