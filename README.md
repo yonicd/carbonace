@@ -1,6 +1,6 @@
 # carbonace
 
-"Wanna tweet a screenshot of your code like the pros?" 
+Wanna tweet a screenshot of your code like the pros?
 
 <img src = 'inst/images/other_init_snap.png' width='50%'>
 
