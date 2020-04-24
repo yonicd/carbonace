@@ -4,6 +4,8 @@ Wanna tweet a pretty screenshot of your code like the pros?
 
 <img src = 'inst/images/other_init_snap.png' width='50%'>
 
+Script inspired from @nujcharee baby :shark: loop [tweet](https://twitter.com/Nujcharee/status/1102607275989049346) ht @maelle
+
 **What it is**: 
 
 A shiny app that converts the ace editor as high resolution images to share that are as pretty and crisp as [carbon](https://carbon.now.sh/), but simplified for `R`!
