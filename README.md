@@ -1,6 +1,6 @@
 # carbonace
 
-Wanna tweet a screenshot of your code like the pros?
+Wanna tweet a pretty screenshot of your code like the pros?
 
 <img src = 'inst/images/other_init_snap.png' width='50%'>
 
@@ -47,9 +47,21 @@ carbonace()
 <img src = 'inst/images/default_snap.png' width='50%'>
 
 ```r
-init <- "createData <- function(rows) {
-  data.frame(col1 = 1:rows, col2 = rnorm(rows))
-}"
+init <- "family <- c('Baby','Mommy','Daddy','Grandma','Lets go hunt')
+
+for(f in family){
+  if(grepl('hunt',f)){
+    print(sprintf('%s!',f))
+  }else{
+    print(sprintf('%s shark doo doo doo doo!',f))
+  }
+}
+
+# [1] 'Baby shark doo doo doo doo!'
+# [1] 'Mommy shark doo doo doo doo!'
+# [1] 'Daddy shark doo doo doo doo!'
+# [1] 'Grandma shark doo doo doo doo!'
+# [1] 'Lets go hunt!'"
 
 carbonace(init = init)
 ```

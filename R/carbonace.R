@@ -25,7 +25,8 @@ carbonace <- function(init = "x <- 1",viewer = shiny::browserViewer()){
         "ace",
         theme = input$theme,
         mode = input$mode,
-        tabSize = input$size,
+        tabSize = input$tab_size,
+        fontSize = input$font_size,
         useSoftTabs = as.logical(input$soft),
         showInvisibles = as.logical(input$invisible)
       )
@@ -55,7 +56,8 @@ carbonace <- function(init = "x <- 1",viewer = shiny::browserViewer()){
                  snapper::load_snapper(),
                  shiny::selectInput("mode", "Mode: ", choices = shinyAce::getAceModes(), selected = "r"),
                  shiny::selectInput("theme", "Theme: ", choices = shinyAce::getAceThemes(), selected = "ambience"),
-                 shiny::numericInput("size", "Tab size:", 4),
+                 shiny::numericInput("tab_size", "Tab size:", 4),
+                 shiny::numericInput("font_size", "Font size:", 12),
                  shiny::radioButtons("soft", NULL, c("Soft tabs" = TRUE, "Hard tabs" = FALSE), inline = TRUE),
                  shiny::radioButtons("invisible", NULL, c("Hide invisibles" = FALSE, "Show invisibles" = TRUE), inline = TRUE),
                  shiny::actionButton("reset", "Reset text"),
