@@ -1,8 +1,10 @@
 # carbonace
 
-Pretty and crisp as [carbon](https://carbon.now.sh/), but for `R`!
+"Wanna tweet a screenshot of your code like the pros?" 
 
 <img src = 'inst/images/other_init_snap.png' width='50%'>
+
+Pretty and crisp as [carbon](https://carbon.now.sh/), but for `R`!
 
 What it is: A shiny app that converts shinyAce as high resolution images to share.
 
