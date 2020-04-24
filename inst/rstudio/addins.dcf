@@ -1,0 +1,5 @@
+Name: carbonace
+Description: Initialize carbonace
+Binding: carbonace_addin
+Interactive: true
+
