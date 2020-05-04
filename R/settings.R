@@ -1,5 +1,5 @@
 #' @title Set components of aceEditor settings
-#' @description Customize non-data components of the the editor.
+#' @description Customize non-data components of the editor.
 #' @return list of class c('ace_settings')
 #' @details To find further information on the attributes that can be used
 #' please refer to [shinyAce](https://github.com/trestletech/shinyAce)

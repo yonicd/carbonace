@@ -1,6 +1,6 @@
 Package: carbonace
 Title: Convert shinyAce to Images
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: person(given = "Jonathan", family = "Sidi", role = c("aut",
         "cre"), email = "first.last@example.com", comment = c(ORCID =
         "0000-0002-4222-1819"))

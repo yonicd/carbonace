@@ -44,6 +44,7 @@ carbonace <- function(init = "x <- 1", viewer = shiny::paneViewer(), ace_opts = 
   server <- function(input, output, session) {
 
     shiny::observe({
+
       shinyAce::updateAceEditor(
         session,
         "ace",
@@ -51,8 +52,9 @@ carbonace <- function(init = "x <- 1", viewer = shiny::paneViewer(), ace_opts = 
         mode = input$mode,
         tabSize = input$tab_size,
         fontSize = input$font_size,
-        useSoftTabs = as.logical(input$soft),
-        showInvisibles = as.logical(input$invisible)
+        useSoftTabs = input$soft,
+        showLineNumbers = input$linenum,
+        showInvisibles = input$invisible
       )
     })
 
@@ -87,8 +89,9 @@ carbonace <- function(init = "x <- 1", viewer = shiny::paneViewer(), ace_opts = 
                  shiny::selectInput("theme", "Theme: ", choices = shinyAce::getAceThemes(), selected = opts$theme),
                  shiny::numericInput("tab_size", "Tab size:", opts$tabSize),
                  shiny::numericInput("font_size", "Font size:", opts$fontSize),
-                 shiny::radioButtons("soft", NULL, c("Soft tabs" = TRUE, "Hard tabs" = FALSE), inline = TRUE),
-                 shiny::radioButtons("invisible", NULL, c("Hide invisibles" = FALSE, "Show invisibles" = TRUE), inline = TRUE),
+                 shiny::checkboxInput('linenum','Show Line Numbers',opts$showLineNumbers),
+                 shiny::checkboxInput("invisible", 'Show invisibles', opts$showInvisibles),
+                 shiny::checkboxInput("soft", 'Soft tabs', opts$useSoftTabs),
                  shiny::actionButton("reset", "Reset text"),
                  shiny::actionButton("clear", "Clear text"),
                  snapper::preview_button(ui = '#ace',label = 'Preview Image'),

@@ -133,7 +133,7 @@ quotation marks, parenthesis, or brackets should be enabled. Default value is TR
 list of class c('ace_settings')
 }
 \description{
-Customize non-data components of the the editor.
+Customize non-data components of the editor.
 }
 \details{
 To find further information on the attributes that can be used
